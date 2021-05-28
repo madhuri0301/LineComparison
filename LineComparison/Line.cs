@@ -4,12 +4,14 @@ using System.Text;
 
 namespace LineComparison
 {
-    class Line
+    public class Line
     {
-        public void LengthOfLine(double x1, double y1, double x2, double y2)
+        public double LengthOfLine(double x1, double y1, double x2, double y2)
         {
-            double Distance = (Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2)));
+            double Distance = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
             Console.WriteLine(Distance);
+            return Distance;
         }
     }
 }
+
